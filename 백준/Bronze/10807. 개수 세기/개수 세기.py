@@ -1,5 +1,6 @@
+# 10807번 개수 세기
 n = int(input())
-n_list = list(map(int, input().split()))
+num_list = list(map(int,input().split()))
+num_list
 v = int(input())
-
-print(n_list.count(v))
+print(num_list.count(v))
