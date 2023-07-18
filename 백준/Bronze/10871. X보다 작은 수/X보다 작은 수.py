@@ -1,6 +1,7 @@
-n, x = map(int,input().split())
-a_list = list(map(int, input().split()))
+# 10871번 X보다 작은 수
+n , x = map(int,input().split())
+num_list = list(map(int,input().split()))
 
-for i in a_list:
+for i in num_list:
     if i < x:
         print(i, end = ' ')
