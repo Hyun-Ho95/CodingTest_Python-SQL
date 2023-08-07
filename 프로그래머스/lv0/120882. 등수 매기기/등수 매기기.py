@@ -1,10 +1,7 @@
 def solution(score):
-    answer = []
-    sort_scores = []
-    scores = [sum(i)/len(i) for i in score] #평균 리스트
-    sort_scores = sorted(scores,reverse=True) #순위 구할때 이용
     
-    for i in scores:
-        answer.append(sort_scores.index(i)+1)
-
-    return answer
+    avg_score = [sum(i)/len(i) for i in score]
+    sorted_avg_score = sorted(avg_score,reverse=True)
+    
+    result = [sorted_avg_score.index(i)+1 for i in avg_score]
+    return result
