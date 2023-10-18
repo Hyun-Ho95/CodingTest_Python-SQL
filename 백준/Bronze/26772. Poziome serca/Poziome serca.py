@@ -1,0 +1,11 @@
+# 26772 Poziome serca
+n = int(input())
+print(' '.join([' @@@   @@@ ' for _ in range(n)]))
+print(' '.join(['@   @ @   @' for _ in range(n)]))
+print(' '.join(['@    @    @' for _ in range(n)]))
+print(' '.join(['@         @' for _ in range(n)]))
+print(' '.join([' @       @ ' for _ in range(n)]))
+print(' '.join(['  @     @  ' for _ in range(n)]))
+print(' '.join(['   @   @   ' for _ in range(n)]))
+print(' '.join(['    @ @    ' for _ in range(n)]))
+print(' '.join(['     @     ' for _ in range(n)]))
