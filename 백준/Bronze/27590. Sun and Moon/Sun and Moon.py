@@ -1,10 +1,11 @@
-ds, ys = map(int, input().split())
-dm, ym = map(int, input().split())
-sun_year = ys - ds
-moon_year = ym - dm
+# 27590 Sun and Moon
+ds, ys = map(int,input().split())
+dm, ym = map(int,input().split())
+s = ys-ds
+m = ym-dm
 
-while sun_year != moon_year :
-    if sun_year < moon_year :
-        sun_year += ys
-    else : moon_year += ym
-print(sun_year)
+while s != m:
+    if s < m:
+        s += ys
+    else: m += ym
+print(s)
