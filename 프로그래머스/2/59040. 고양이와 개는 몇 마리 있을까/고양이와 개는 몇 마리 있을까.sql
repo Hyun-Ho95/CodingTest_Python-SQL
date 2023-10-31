@@ -4,16 +4,3 @@ FROM ANIMAL_INS
 WHERE ANIMAL_TYPE IN ('Cat','Dog')
 GROUP BY ANIMAL_TYPE
 ORDER BY ANIMAL_TYPE
-
-
-
-
-
-
-
--- 코드를 입력하세요
-# SELECT ANIMAL_TYPE,
-# count(ANIMAL_ID)
-# from ANIMAL_INS
-# group by ANIMAL_TYPE
-# order by ANIMAL_TYPE asc
