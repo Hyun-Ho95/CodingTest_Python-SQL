@@ -14,3 +14,10 @@ WHERE C.CAR_ID NOT IN (
 GROUP BY C.CAR_ID
 HAVING C.CAR_TYPE IN ('세단','SUV') AND (FEE>=500000 AND FEE<2000000)
 ORDER BY FEE DESC, C.CAR_TYPE, C.CAR_ID DESC
+
+-- # WHERE 절에서 WHERE H.END_DATE <= '2022-10-31' OR H.START_DATE >= '2022-12-01' 이런 조건을 사용한다면
+-- # CAR_ID | START_DATE | END_DATE
+--      1   | 2022-10-01 | 2022-10-31
+--      1   | 2022-11-01 | 2022-11-30
+-- 위 예시처럼 동일한 CAR_ID에 대해 예약이 2건 있는 경우
+-- OR 조건중 하나인 H.END_DATE <= '2022-10-31'을 만족하는 경우가 있기 때문에 값이 포함되어버린다 ( 11월에 빌릴 수 있다고 해버린다 )
