@@ -13,4 +13,4 @@ str_num = [ alphabet[i] for i in string ]
 cnt = 0
 for i in range(l):
         cnt += str_num[i]*(31**i)
-print(cnt)
+print(cnt%1234567891)
