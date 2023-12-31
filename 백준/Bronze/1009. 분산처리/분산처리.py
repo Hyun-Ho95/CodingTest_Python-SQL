@@ -1,5 +1,4 @@
 # 1009번 분산처리
-import sys
 t = int(input())
 answer =[]
 
