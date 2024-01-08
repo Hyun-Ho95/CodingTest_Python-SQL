@@ -1,13 +1,10 @@
 # 1440번 타임머신
 time = list(map(int,input().split(':')))
-hour = [h for h in range(1,13)]
-sec = [s for s in range(60)]
-
-cnt = 0 
-for i in range(3):
-    for j in range(3):
-        for k in range(3):
-            if i != j and j != k and i != k :
-                if time[i] in hour and time[j] in sec and time[k] in sec:
-                    cnt += 1
-print(cnt)
+h = 0
+x = 0
+for i in time:
+    if 0 < i < 13:
+        h += 1
+    if 59 < i <100:
+        x -= 1
+print(0 if x<0 else h*2)
