@@ -2,16 +2,14 @@
 while True:
     try:
         n,k = map(int,input().split())
-        chicken = n
+        chicken = n 
         stamp = n
+        service = 0
         
-        while True:
-            if stamp//k==0:
-                break
-            
-            chicken += stamp // k
-            stamp = stamp // k + stamp %k
+        while stamp // k > 0:
+            service += stamp // k
+            stamp = (stamp // k) + (stamp % k)
         
-        print(chicken)
+        print(chicken + service)
     except EOFError:
         break
