@@ -1,5 +1,4 @@
 # 1718번 암호(BronzeII)
-from collections import deque
 line = input()
 key = input()
 dic = {chr(i+96) : i for i in range(1,27)}
@@ -33,4 +32,5 @@ for i in line:
             cnt = 0
         else:
             cnt += 1
+            
 print(''.join(ans))
