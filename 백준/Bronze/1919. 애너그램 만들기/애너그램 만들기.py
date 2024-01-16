@@ -2,8 +2,8 @@
 from collections import deque
 word1 = deque(input())
 word2 = deque(input())
-w1_copy = deque(word1)
-w2_copy = deque(word2)
+w1_copy = word1.copy()
+w2_copy = word2.copy()
 
 cnt = 0
 
